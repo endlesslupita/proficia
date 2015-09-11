@@ -4,3 +4,10 @@ django-user-accounts==1.2
 metron==1.3.5
 pinax-eventlog==1.0.0
 django-jsonfield==0.9.15
+pinax-blog==4.2.1
+dj-database-url==0.3.0
+django-postgrespool==0.3.0
+gunicorn==19.3.0
+psycopg2==2.6
+SQLAlchemy==1.0.4
+whitenoise==1.0.6
