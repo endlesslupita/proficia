@@ -5,6 +5,8 @@ from django.views.generic import TemplateView
 
 from django.contrib import admin
 
+from . import views
+
 
 urlpatterns = patterns(
     "",
@@ -12,6 +14,7 @@ urlpatterns = patterns(
     url(r"^admin/", include(admin.site.urls)),
     url(r"^account/", include("account.urls")),
     url(r"^blog/", include("pinax.blog.urls")),
+    url(r"^editing/", views.editingpage, name="editing_page"),
 )
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

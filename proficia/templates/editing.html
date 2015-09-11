@@ -1,0 +1,32 @@
+{% extends "site_base.html" %}
+
+{% load i18n %}
+
+{% block head_title %}pinax-project-account{% endblock %}
+
+{% block body_class %}home{% endblock %}
+
+{% block body_base %}
+    <!-- section class="jumbotron" --->
+    <section>
+        <div class="container">
+            <h2 class="text-center">{% blocktrans %}In Korea{% endblocktrans %}</h2>
+            <p class="lead">
+                {% blocktrans %}
+                Jocelyn Graf’s Los Angeles-based company, <b>Proficia</b>, provides 
+                English editing and consulting services for <b>Compecs, Inc. Korea</b>. 
+                Please visit <a href="http://compecs.com/">compecs.com</a> for 
+                more information or call 010-4785-3425 (Korean or English).
+                {% endblocktrans %}
+            </p>
+            <h2 class="text-center">{% blocktrans %}Worldwide{% endblocktrans %}</h2>
+            <p class="lead">
+                {% blocktrans %}
+                If you prefer to pay in any currency other than Korean won, please 
+                contact Proficia’s Los Angeles office directly for editing and 
+                consulting services.
+                {% endblocktrans %}
+            </p>
+        </div>
+    </section>
+{% endblock %}
