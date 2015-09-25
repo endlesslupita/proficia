@@ -1,2 +1,12 @@
 *.pyc
 
+.idea
+
+proficia/lib
+proficia/include
+
+proficia/.Python
+proficia/bin/
+proficia/pip-selfcheck.json
+
+node_modules/

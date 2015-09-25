@@ -1,5 +1,5 @@
 import os
-
+import dj_database_url
 
 PROJECT_ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), os.pardir))
 PACKAGE_ROOT = os.path.abspath(os.path.dirname(__file__))
@@ -13,6 +13,14 @@ DATABASES = {
         "NAME": "dev.db",
     }
 }
+
+"""
+@mdrake
+Heroku adds database settings to your environment.
+We are using a tool that converts Heroku's database settings format to django's format.
+"""
+if('DATABASE_URL' in os.environ):
+    DATABASES['default'] = dj_database_url.config()
 
 ALLOWED_HOSTS = []
 
